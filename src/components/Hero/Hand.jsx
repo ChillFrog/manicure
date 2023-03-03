@@ -1,4 +1,3 @@
-import Image from "next/image";
 import React from "react";
 import { useSelector } from "react-redux";
 
@@ -8,7 +7,7 @@ function Hand() {
 
   return (
     <div className="m-3 flex justify-center">
-      <Image
+      <img
         src={handImage}
         width={1800}
         height={1800}
@@ -17,7 +16,6 @@ function Hand() {
         style={{
           backgroundColor: `${palleteColor}`,
         }}
-        priority={true}
       />
     </div>
   );

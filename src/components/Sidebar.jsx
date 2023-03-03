@@ -1,13 +1,7 @@
-import react, { useState } from "react";
-import Image from "next/image";
-import { categories } from "../utils/nail-styles";
-import Link from "next/link";
-import { Bars3Icon } from "@heroicons/react/24/solid";
+import React from "react";
 
-export default function Main() {
-  return (
-    <div>
-      <div className="hidden">Sidebar</div>
-    </div>
-  );
+function Sidebar() {
+  return <div className="hidden">Sidebar</div>;
 }
+
+export default Sidebar;

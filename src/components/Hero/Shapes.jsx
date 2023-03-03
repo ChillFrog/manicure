@@ -1,5 +1,3 @@
-import Image from "next/image";
-import React from "react";
 import { useDispatch } from "react-redux";
 import { setHandImage } from "../../reducers/rootReducer";
 import { shapes } from "../../utils/nail-styles";
@@ -19,11 +17,11 @@ function Shapes() {
           }}
           className="m-3 shrink-0 snap-start first:snap-center"
         >
-          <Image
+          <img
             width={500}
             height={500}
             className="w-24 rounded-xl"
-            src={`/${shape.image}`}
+            src={shape.image}
             alt={shape.name}
           />
         </button>

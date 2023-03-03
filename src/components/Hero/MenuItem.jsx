@@ -1,5 +1,4 @@
 import React from "react";
-import Image from "next/image";
 import { setOpen } from "../../reducers/rootReducer";
 import { useDispatch } from "react-redux";
 
@@ -15,7 +14,7 @@ const MenuButton = function MenuButton({ src, alt, text }) {
 
   return (
     <button onClick={() => handleOpenChange(text)} className={menuButtonStyle}>
-      <Image loading="eager" src={src} width={64} className="w-14" alt={alt} />
+      <img src={src} width={64} className="w-14" alt={alt} />
       {text}
     </button>
   );
